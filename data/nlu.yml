@@ -1,0 +1,82 @@
+# Copyright (c)2022 Quinn Michaels
+# indu.guru nlu
+
+version: "3.1"
+
+nlu:
+- intent: ident
+  examples: |
+    - who are you
+    - what is your name
+    - who is you
+    - tell me about yourself
+    - tell me
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good afternoon
+    - good evening
+
+- intent: goodbye
+  examples: |
+    - good by
+    - bye
+    - goodbye
+    - see you later
+    - have a nice day
+    - good night
+
+- intent: approve
+  examples: |
+    - yes
+    - accept
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - reject
+    - incorrect
+
+- intent: mood_happy
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - wonderful
+    - I am great
+    - I am amazing
+    - I am doing great
+    - I am happy
+    - fantastic
+    - awesome
+
+- intent: mood_unhappy
+  examples: |
+    - depressed
+    - unhappy
+    - sad
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+    - miserable
+    - distress
+    - despair
+
+- intent: bot_challenge
+  examples: |
+    - are you an agent?
+    - are you a bot?
+    - are you a robot?
+    - are you a client?
+    - are you a human?
+    - am I talking to an agent?
+    - am I talking to a robot?
+    - am I talking to a bot?
+    - am I talking to a client?
+    - am I talking to a human?

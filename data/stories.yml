@@ -1,0 +1,33 @@
+# Copyright (c)2022 Quinn Michaels
+# indu.guru stories
+
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_happy
+  - action: utter_happy
+
+- story: sad path happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - action: utter_did_that_help
+  - intent: approve
+  - action: utter_happy
+
+- story: sad path sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

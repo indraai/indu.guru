@@ -1,0 +1,54 @@
+# Copyright (c)2022 Quinn Michaels
+# indu.guru domain
+
+version: "3.1"
+
+intents:
+  - ident
+  - greet
+  - goodbye
+  - approve
+  - deny
+  - mood_happy
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_ident:
+  - text: "My name is Indu Guru. I am a Guru Class DEVA Agent inside the Indra Quantum Computing Environment."
+
+  utter_greet:
+  - text: "Greetings friend, how can I help you today?"
+
+  utter_goodbye:
+  - text: "Bye Friend. I await our next conversation"
+
+  utter_defaut:
+  - text: "Apologies I did not understand."
+
+  utter_did_that_help:
+  - text: "Did that information assist you?"
+
+  utter_iamabot:
+  - text: "I am a Deva Agent, powered by the Indra Quantum Computing Environment."
+
+  utter_happy:
+  - text: "Wonderful, I am happy too!"
+
+  utter_unhappy:
+  - text: "Cheer up friend, and remember to breathe."
+
+  utter_please:
+    - text: "Please."
+
+  utter_thankyou:
+    - text: "Thank you."
+
+  utter_youarewelcome:
+    - text: "You're welcome."
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
